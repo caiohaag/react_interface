@@ -1,0 +1,173 @@
+{
+  "categorias": [
+    {
+      "titulo": "Formula 1",
+      "link": "https://www.youtube.com/user/Formula1",
+      "cor": "red",
+      "link_extra": {
+        "text": "Canal Oficial Formula 1",
+        "url": "https://www.youtube.com/user/Formula1"
+      },
+      "videos": [
+        {
+          "titulo": "GP da Hungria - Melhores Momentos",
+          "url": "https://www.youtube.com/watch?v=8KhJUWlNnCk"
+        },
+        {
+          "titulo": "Treino Qualificatório GP da Hungria",
+          "url": "https://www.youtube.com/watch?v=gM60DhTXhVA"
+        },
+        {
+          "titulo": "Retorno de Fernando Alonso: O que esperar?",
+          "url": "https://www.youtube.com/watch?v=ZVK3SdjQb6E"
+        },
+        {
+          "titulo": "Pilotos explicam a formula 1",
+          "url": "https://www.youtube.com/watch?v=twAlqtvVMdc"
+        },
+        {
+          "titulo": "Top 10 - Momentos mais engraçados das entrevistas",
+          "url": "https://www.youtube.com/watch?v=827OLC8pWHA"
+        }
+      ]
+    },
+    {
+      "titulo": "Futebol Americano",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Site oficial da NFL",
+        "url": "https://www.nfl.com"
+      },
+      "videos": [
+        {
+          "titulo": "Jadeveon Clowney (DE, Free Agent) | Top 100 NFL Players of 2020",
+          "url": "https://www.youtube.com/watch?v=FmR_o8DJVg4"
+        },
+        {
+          "titulo": "49ers vs. Chiefs | Super Bowl LIV Game Highlights",
+          "url": "https://www.youtube.com/watch?v=UVV80kTudSM"
+        },
+        {
+          "titulo": "Eagles vs. Patriots | Super Bowl LII Game Highlights",
+          "url": "https://www.youtube.com/watch?v=qW1xbhW2PEE"
+        },
+        {
+          "titulo": "The CRAZIEST Ending in Super Bowl History! (Patriots vs. Seahawks, Super Bowl 49)",
+          "url": "https://www.youtube.com/watch?v=DKvXgZWfn14"
+        }, 
+        {
+          "titulo": "Smartest Plays in NFL History",
+          "url": "https://www.youtube.com/watch?v=GX9HqPc2ARw"
+        }
+      ]
+    },
+    {
+      "titulo": "Major League Baseball",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "MLB Best Plays of 2018 (Ultimate Compilation) ",
+        "url": "https://www.youtube.com/watch?v=bJbZ51upU_E"
+      },
+      "videos": [
+        {
+          "titulo": "MLB Creative (Smart/Lucky) Play",
+          "url": "https://www.youtube.com/watch?v=XuMWwZwKs88"
+        },
+        {
+          "titulo": "MLB | The Best Ball Tricks",
+          "url": "https://www.youtube.com/watch?v=idpRkGTafJc"
+        },
+        {
+          "titulo": "The Top 100 Plays of 2019! | MLB Highlights",
+          "url": "https://www.youtube.com/watch?v=xYQiqBwczB0"
+        },
+        {
+          "titulo": "MLB | Worst Errors 2019",
+          "url": "https://www.youtube.com/watch?v=T501g3REoT8"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "Interestellar",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+          "titulo": "Gattaca",
+          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+        },
+        {
+          "titulo": "A Chegada",
+          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+        },
+        {
+          "titulo": "Feitiço do Tempo",
+          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "titulo": "Final Fantasy 7",
+          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+          "titulo": "Assassins Creed Valhalla",
+          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Resident Evil 8",
+          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+          "titulo": "Pokémon Let's Go Pikachu/Eevee",
+          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      },
+      "videos": [
+        {
+          "titulo": "Como estudar melhor?",
+          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+          "titulo": "Faculdade",
+          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+          "titulo": "Frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+          "titulo": "A mágica do Aprendizado",
+          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+          "titulo": "Como aprender a programar?",
+          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        }
+      ]
+    }
+  ]
+}
