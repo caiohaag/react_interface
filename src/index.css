@@ -23,3 +23,28 @@ body {
 a {
   color: inherit;
 } 
+
+.div404 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div404 img {
+  max-width: 600px;
+  width: 80%;
+  margin-bottom: 2em;;
+}
+
+@media (max-width: 800px) {
+  .div404 h1 {
+    font-size: 1em;
+  }
+}
+
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTop));
+  display: flex;
+  flex-direction: column;
+}
