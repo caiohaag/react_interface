@@ -1,0 +1,17 @@
+{
+    "categorias": [
+        {
+        "id": 1,
+        "nome": "Formula 1",
+        "descricao": "Highlights e vídeos sobre a principal categoria de automobilismo do mundo",
+        "cor": "red"
+        },
+
+        {
+            "id": 2,
+            "nome": "Futebol Americano",
+            "descricao": "A NFL é a principal liga de Futebol Americano.",
+            "cor": "green"
+        }
+    ]
+}
