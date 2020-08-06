@@ -3,49 +3,43 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import Linha from '../../../components/Linha';
+import Tabela from '../../../components/Tabela';
+import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
+import Removedor from '../../../components/Removedor';
 
 function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
     cor: '',
+    link: '',
   };
+
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    // chave: nome, descricao, bla, bli
-    setValues({
-      ...values,
-      [chave]: valor, // nome: 'valor'
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
-
 
   useEffect(() => {
     const URL_TOP = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/categorias'
-    : 'https://sportsflix.herokuapp.com/categorias'
+      ? 'http://localhost:8080/categorias'
+      : 'https://sportsflix.herokuapp.com/categorias';
     fetch(URL_TOP)
-    .then(async (respostaDoServidor) => {
-      const resposta = await respostaDoServidor.json();
-      setCategorias([
-        ...resposta,
-      ]);
-    })
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
   }, []);
 
   return (
     <PageDefault>
       <h1>
-        Cadastro de Categoria: {values.nome}
+        Cadastro de Categoria:
+        {' '}
+        {values.nome}
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -55,15 +49,31 @@ function CadastroCategoria() {
           values,
         ]);
 
-        setValues(valoresIniciais);
+        const desc = {
+          text: values.descricao,
+          link: values.link,
+        };
+
+        categoriasRepository.create({
+          titulo: values.titulo,
+          descricao: values.descricao,
+          cor: values.cor,
+          link_extra: desc,
+        })
+          .then(() => {
+            console.log('Cadastrou com sucesso!');
+            window.location.reload()
+          });
+
+        clearForm();
       }}
       >
 
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -72,6 +82,14 @@ function CadastroCategoria() {
           type="textarea"
           name="descricao"
           value={values.descricao}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="Link padrão"
+          type="text"
+          name="link"
+          value={values.link}
           onChange={handleChange}
         />
 
@@ -88,18 +106,28 @@ function CadastroCategoria() {
         </Button>
       </form>
 
-      {categorias.length === 0 && (
-        <div>
+      <Tabela>
+        <Linha
+          titulo="Nome da Categoria"
+          descricao="Descrição da categoria"
+          cor="gray"
+          param="Ação"
+        />
+        {categorias.length === 0 && (
+        <tr>
           Carregando...
-        </div>
-      )}
-      <ul>
+        </tr>
+        )}
+
         {categorias.map((categoria, indice) => (
-          <li key={`${categoria}${indice}`}>
-            {categoria.nome}
-          </li>
+          <Linha
+            titulo={categoria.titulo}
+            descricao={categoria.descricao}
+            cor={categoria.cor}
+            param={Removedor(categoria.id)}
+          />
         ))}
-      </ul>
+      </Tabela>
 
       <Link to="/">
         Ir para home
